@@ -73,7 +73,7 @@ span.celsius {
 .logo_box {
     background-color: #0d0d0d;
     text-align: center;
-    padding: 30px 0;
+    padding: 0 0 8px 0;
 }
 
 .gnb_box {
@@ -123,11 +123,17 @@ span.celsius {
     transform: skewX(15deg);
 }
 
+.down_arrow i {
+    font-size: 12px;
+}
+
 /* 왜 적용 안돼 !!!!!!!!!!!! ? ?? */
 /* .down_arrow::after {
     font-family: 'Montserrat', sans-serif;
     content: "\f078";
 } */
+
+
 
 .bg {
     width: 100%;
@@ -137,4 +143,19 @@ span.celsius {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+}
+
+.main_box {
+    /* position: relative; */
+}
+
+
+
+/*  2021.07.22 / 17:49 고쳐야 함.  */
+.main_text_box {
+    width: 1000px;
+    height: 100%;
+    position: relative;
+    top: -50%;
+    background-color: #fff;
 }
