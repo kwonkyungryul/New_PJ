@@ -143,19 +143,128 @@ span.celsius {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+
+    padding-top: 30vh;
 }
 
-.main_box {
-    /* position: relative; */
-}
-
-
-
-/*  2021.07.22 / 17:49 고쳐야 함.  */
+/* 2021.07.22 / 17:49 고쳐야 함. 2021.07.23 11:47 해결 */
 .main_text_box {
-    width: 1000px;
-    height: 100%;
-    position: relative;
-    top: -50%;
-    background-color: #fff;
+    /* position: absolute; */
+    /* top: -50%; */
+    margin: 0 auto;
+    /* background-color: #000; */
+}
+
+.main_text_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_text_left {
+    flex-basis: 50%;
+    
+    font-family: 'Cinzel', serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5;
+
+    padding: 130px 0 0 0;
+}
+
+.playstation {
+    transform: skewX(-15deg);
+    
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+.playstation span {
+    text-transform: uppercase;
+    background-color: rgba(194, 0, 0, 0.3);
+    padding: 10px;
+}
+
+/* .img_box {
+    vertical-align: top;
+    line-height: 1;
+} */
+
+.main_text_left img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;   
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.img_box span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    color:rgba(255, 255, 255, .7);
+
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.main_text_right {
+    flex-basis: 30%;
+    font-family: 'Cinzel', serif;
+}
+
+.treding_posts_box {
+    background-color: #000;
+    color: #fff;
+
+    padding: 20px;
+}
+
+.posts_title {
+    /* padding-left: 30px; */
+}
+
+.posts_title::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 14px;
+    background-color: #c20000;
+    transform: skewX(-15deg);
+    margin-top: 2px;
+}
+
+.posts_title h5 {
+    padding-left: 22px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.posts_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.posts_contents_box {
+    padding: 0 0 0 20px;
+}
+
+.posts_content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.posts_date {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-align: left;
+    font-size: 12px;
+    color:rgba(255, 255, 255, .7);
+    margin-top: 8px;
 }
